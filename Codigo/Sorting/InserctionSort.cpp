@@ -26,9 +26,3 @@ void insertionSort(int *ar, int n){
     }
     return;
 }
-
-int main(){ 
-    
-
-    return 0;
-}
