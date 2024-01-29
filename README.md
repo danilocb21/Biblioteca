@@ -12,7 +12,15 @@ Códigos em C++.
 
 ### Problemas
 
+- [Gambler's Ruin](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/Gambler'sRuin.cpp)
 - [String Permutations](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/stringPermutation.cpp)
+
+### Sorting
+
+- [Bubble Sort](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Sorting/BubbleSort.cpp)
+- [Inserction Sort](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Sorting/InserctionSort.cpp)
+- [Quick Sort](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Sorting/QuickSort.cpp)
+- [Selection Sort](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Sorting/SelectionSort.cpp)
 
 ### Extra
 
