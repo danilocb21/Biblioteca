@@ -11,6 +11,7 @@ Códigos em C++.
 - [Algoritmo de Euclides](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcd.cpp)
 - [Algoritmo de Euclides Estendido](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdExtended.cpp)
 - [Algoritmo de Euclides Otimizado](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdBinary.cpp)
+- [Crivo de Eratóstenes](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/sieve.cpp)
 - [Exponenciação Rápida](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/binPow.cpp)
 - [Inversa Modular](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/modularInverse.cpp)
 - [Método de Horner para Avaliação Polinomial](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/Horner.cpp)
