@@ -13,13 +13,15 @@ Códigos em C++.
 - [Algoritmo de Euclides Otimizado](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdBinary.cpp)
 - [Exponenciação Rápida](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/binPow.cpp)
 - [Inversa Modular](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/modularInverse.cpp)
-- [Método de Horner para avaliação polinomial](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/Horner.cpp)
-- [Mínimo múltiplo comum - MMC](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/lcm.cpp)
+- [Método de Horner para Avaliação Polinomial](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/Horner.cpp)
+- [Mínimo Múltiplo Comum - MMC](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/lcm.cpp)
 
 ### Problemas
 
-- [Gambler's Ruin](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/Gambler'sRuin.cpp)
-- [String Permutations](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/stringPermutation.cpp)
+- [É Quadrado Perfeito?](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/perfectSquare.cpp)
+- [Intersecção de Retângulos](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/rectangleIntersection.cpp)
+- [Permutações de uma String](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/stringPermutation.cpp)
+- [Ruína do Jogador](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/Gambler'sRuin.cpp)
 
 ### Sorting
 
