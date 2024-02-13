@@ -8,7 +8,13 @@ Códigos em C++.
 
 ### Matemática
 
-- [Algoritmo de Euclides Estendido](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/ExtendedEuclideanAlgorithm.cpp)
+- [Algoritmo de Euclides](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcd.cpp)
+- [Algoritmo de Euclides Estendido](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdExtended.cpp)
+- [Algoritmo de Euclides Otimizado](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdBinary.cpp)
+- [Exponenciação Rápida](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/binPow.cpp)
+- [Inversa Modular](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/modularInverse.cpp)
+- [Método de Horner para avaliação polinomial](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/Horner.cpp)
+- [Mínimo múltiplo comum - MMC](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/lcm.cpp)
 
 ### Problemas
 
