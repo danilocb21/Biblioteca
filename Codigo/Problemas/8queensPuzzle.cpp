@@ -7,42 +7,36 @@ using namespace std;
 int n;
 int cnt = 0;
 
-void add(int col, vector<int> &queens) {
-    queens.pb(col);
+void add(vector<bool> &cols, vector<bool> &diag1, vector<bool> &diag2, int row, int col) {
+    cols[col] = true;
+    diag1[row - col + n - 1] = true;
+    diag2[row + col] = true;
 }
 
-void rem(vector<int> &queens) {
-    queens.pop_back();
+void rem(vector<bool> &cols, vector<bool> &diag1, vector<bool> &diag2, int row, int col) {
+    cols[col] = false;
+    diag1[row - col + n - 1] = false;
+    diag2[row + col] = false;
 }
 
-bool valid(int row, int col, vector<int> &queens) {
-    for(int i = 0; i < queens.size(); i++) {
-        // same column
-        if(col == queens[i]) return false;
-        // same diagonal
-        if(abs(row - i) == abs(col - queens[i])) return false;
-    }
-    return true;
-}
-
-void backtracking(int row, vector<int> &queens) {
+void backtracking(int row, vector<bool> &cols, vector<bool> &diag1, vector<bool> &diag2) {
     if(row == n) {
         cnt += 1;
-        return;
-    }
+        return; 
+    }                  
     for(int col = 0; col < n; col++) {
-        if(valid(row, col, queens)) {
-            add(col, queens);
-            backtracking(row + 1, queens);
-            rem(queens);
+        if(!cols[col] && !diag1[row - col + n - 1] && !diag2[row + col]) {
+            add(cols, diag1, diag2, row, col);
+            backtracking(row + 1, cols, diag1, diag2);
+            rem(cols, diag1, diag2, row, col);
         }
     }
 }
 
 int main(){ _
     cin >> n; // number of rows = columns
-    vector<int> vec;
-    backtracking(0, vec);
+    vector<bool> cols(n, false), diag1(2 * n - 1, false), diag2(2 * n - 1, false);
+    backtracking(0, cols, diag1, diag2);
     cout << cnt << endl;
 
     return 0;
