@@ -1,8 +1,11 @@
 # Biblioteca
 
-Biblioteca de algoritmos para Maratona de Programação.
+Esta biblioteca é uma coletânea de algoritmos para auxiliar em competições de programação. 
 
-Códigos em C++.
+As [fontes](#referências) são de códigos já implementados por competidores avançados, livros de programação, fóruns
+ou mesmo por modificações pessoais.
+
+Os códigos estão implementados em c++.
 
 ## Conteúdo
 
@@ -13,6 +16,7 @@ Códigos em C++.
 - [Algoritmo de Euclides Otimizado](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcdBinary.cpp)
 - [Crivo de Eratóstenes](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/sieve.cpp)
 - [Exponenciação Rápida](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/binPow.cpp)
+- [Função totiente de Euler](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/phi.cpp)
 - [Inversa Modular](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/modularInverse.cpp)
 - [Método de Horner para Avaliação Polinomial](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/Horner.cpp)
 - [Mínimo Múltiplo Comum - MMC](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/lcm.cpp)
@@ -22,6 +26,7 @@ Códigos em C++.
 - [É Quadrado Perfeito?](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/perfectSquare.cpp)
 - [Intersecção de Retângulos](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/rectangleIntersection.cpp)
 - [Permutações de uma String](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/stringPermutation.cpp)
+- [Problema das 8 Damas](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/8queensPuzzle.cpp)
 - [Ruína do Jogador](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Problemas/Gambler'sRuin.cpp)
 
 ### Sorting
@@ -34,3 +39,9 @@ Códigos em C++.
 ### Extra
 
 - [Template](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Extra/template.cpp)
+
+## Referências
+
+- [cp-algorithms](https://github.com/cp-algorithms/cp-algorithms)
+- [Biblioteca de algoritmos Bruno Maletta](https://github.com/brunomaletta/Biblioteca)
+- [Errichto Constest Library](https://github.com/Errichto/contest_library)
