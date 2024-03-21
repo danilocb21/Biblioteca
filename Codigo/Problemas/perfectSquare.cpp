@@ -1,3 +1,5 @@
+// Quadrado Perfeito
+
 #include <bits/stdc++.h>
 
 // Time Complexity: O(log n)
