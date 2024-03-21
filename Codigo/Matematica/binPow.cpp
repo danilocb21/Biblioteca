@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
-typedef long long ll;
-
+// Exponenciacao Rapida
+//
 // result = a^b % m 
 // Time Complexity = O(log b)
+
 ll binpow(ll a, ll b, ll m){
     ll result = 1;
     while(b > 0){

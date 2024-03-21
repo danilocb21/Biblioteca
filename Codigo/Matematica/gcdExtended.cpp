@@ -1,9 +1,8 @@
+// Euclides Extendido
+//
 // Teorema de Bézout
 // Time Complexity: O(log N)
 // Auxiliary Space: O(log N)
-#include <bits/stdc++.h>  
-
-using namespace std;
 
 // ax + by = gcd(a, b)
 // gcd(a, b) = gcd(b % a, a) = (b % a) * x1 + a * y1
@@ -11,6 +10,7 @@ using namespace std;
 // ax + by = a(y1 - (b/a) * x1) + b * x1
 // x = y1 - (b/a) * x1
 // y = x1
+
 int gcdExtended(int a, int b, int *x, int *y) { 
     if(a == 0){ 
         *x = 0; 

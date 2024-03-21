@@ -1,3 +1,5 @@
+// Selection Sort
+//
 // comparações C(n) = O(n^2)
 // trocas T(n) = O(n)
 
@@ -7,10 +9,6 @@
 // Desvantagens:
 // não adaptável
 // não é estável
-
-#include <bits/stdc++.h>
-
-using namespace std;
 
 void selectionSort(int *ar, int n){
     int i, j;

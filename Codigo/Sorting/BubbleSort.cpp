@@ -1,3 +1,5 @@
+// Bubble Sort
+//
 // comparações: C(n) = O(n^2)
 // trocas: T(n) = O(n^2)
 // adptativo: O(n) quando vetor está parcialmente ordenado
@@ -9,10 +11,6 @@
 // Desvantagens:
 // não adaptável
 // muitas trocas
-
-#include <bits/stdc++.h>
-
-using namespace std;
 
 void bubbleSort(int *ar, int n){
     int i, aux;

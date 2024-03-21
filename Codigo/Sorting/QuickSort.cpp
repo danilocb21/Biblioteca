@@ -1,14 +1,4 @@
-// comparações: C(n) = O()
-// trocas: T(n) = O()
-// adptativo: O()
-
-// Vantagens:
-
-// Desvantagens:
-
-#include <bits/stdc++.h>
-
-using namespace std;
+// Quick Sort
 
 void troca(int *ar, int i, int j){
     int aux;

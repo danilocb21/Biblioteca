@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+// Inversa Modular
+//
 // The exact time complexity of the this recursion is not known. 
 // It's is somewhere between  O(logm / loglogm) and O(m^(1/3 -2/177 + e))
 // demo:
@@ -10,6 +9,7 @@ using namespace std;
 // -k*a ≡ r (mod m)
 // -k ≡ r*a_inv (mod m)
 // a_inv ≡ k*r_inv (mod m)
+
 int inv(int a, int m){
     return a <= 1 ? a : m - (long long)(m / a) * inv(m % a, m) % m;
 }

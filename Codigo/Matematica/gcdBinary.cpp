@@ -1,9 +1,8 @@
+// Algoritmo de Euclides Otimizado
+//
 // is an optimization to the normal Euclidean algorithm
 // The slow part of the normal algorithm are the modulo operations. 
 // Modulo operations O(1) , but are a lot slower than simpler operations like addition, subtraction or bitwise operations.
-#include <bits/stdc++.h>
-
-using namespace std;
 
 int binary_gcd(int a, int b) {
     if(!a || !b) return a | b;

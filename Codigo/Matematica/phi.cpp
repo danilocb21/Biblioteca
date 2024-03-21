@@ -1,7 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 // Euler's totient function
+//
 // Time Complexity: O(sqrt(n))
 int phi(int n){
     int result = n;

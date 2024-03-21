@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+// Crivo de Erastotenes
+//
 // Time Complexity: O(nloglogn)
 // Auxiliary Space: O(n)
 // Find primes in range [2, n]
+
 vector<int> sieve(int n){
     vector<int> is_prime(n + 1, true);
     is_prime[0] = is_prime[1] = false;
