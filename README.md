@@ -9,6 +9,14 @@ Os códigos estão implementados em c++.
 
 ## Conteúdo
 
+### Progamação Dinâmica
+
+- [Mochila com Bitmask](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/DP/knapsack.cpp)
+
+### Estruturas de Dados
+
+- [BIT (Fenwick Tree)](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Estruturas/bit.cpp)
+
 ### Matemática
 
 - [Algoritmo de Euclides](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcd.cpp)
