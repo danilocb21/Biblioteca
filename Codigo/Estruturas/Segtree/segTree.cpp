@@ -1,52 +1,72 @@
 // SegTree
 //
+// build : O(n)
+// update : O(logn)
+// query : O(logn)
 
-const int MAXN = 100;
+struct node {
+    int val;
 
-int n, t[4*MAXN];
+    node() {
+        val = 0;
+        // val = elemento neutro
+    }
 
-void build(int a[], int v, int tl, int tr) {
-	if(tl == tr) {
-		t[v] = a[tl];
-	} else {
-		int tm = (tl + tr) / 2;
-		build(a, v * 2, tl, tm);
-		build(a, v * 2 + 1, tm + 1, tr);
-		t[v] = t[v * 2] + t[v * 2 + 1];
-	}
-}
+    node(int val) : val(val) {
+    }
+    
+    node operator + (const node &rhs) const {
+        return node(val + rhs.val);
+        // return node(val op rhs.val);
+    }
+};
 
-int sum(int v, int tl, int tr, int l, int r) {
-	if(l > r) return 0;
-	if(l == tl && r == tr) {
-		return t[v];
-	}
-	int tm = (tl + tr) / 2;
-	return sum(v * 2, tl, tm, l, min(r, tm)) + sum(v * 2 + 1, tm + 1, tr, max(l, tm + 1), r);
-}
+struct SegTree {
+    int n;
+    vector<node> st;
 
-void update(int v, int tl, int tr, int pos, int new_val) {
-	if(tl == tr) {
-		t[v] = new_val;
-	} else {
-		int tm = (tl + tr) / 2;
-		if(pos <= tm) {
-			update(v * 2, tl, tm, pos, new_val);
-		} else {
-			update(v * 2 + 1, tl, tm, pos, new_val);
-		}
-		t[v] = t[v * 2] + t[v * 2 + 1];
-	}
-}
+    SegTree(){}
+    SegTree(int n) : n(n) {
+        st.resize(4 * n + 2);
+    } 
+    SegTree(vector<int> &a) {
+        n = a.size();
+        st.resize(4 * n + 2);
+        build(1, 0, n - 1, a);
+    }
 
-int main(){ _
-	cin >> n;
-	int ar[n];
-	for(int i = 0; i < n; i++) {
-		cin >> ar[i];
-	}
+    void build(int pos, int l, int r, vector<int> &a) {
+        if(l == r) {
+            st[pos] = node(a[l]);
+            return; 
+        }
+        int mi = (l + r) / 2;
+        build(2 * pos, l, mi, a);
+        build(2 * pos + 1, mi + 1, r, a);
+        st[pos] = st[2 * pos] + st[2 * pos + 1];
+    }
 
-	build(ar, 1, 0, n - 1);
-	
-    return 0;
-}
+    void update(int x, int y, int pos, int l, int r) { //void update(int x, node y, int pos, int l, int r)
+        if(l == r) {
+            st[pos] = node(y); //st[pos] = y;
+            return;
+        }
+        int mi = (l + r) / 2;
+        if(x <= mi) update(x, y, 2 * pos, l, mi);
+        else update(x, y, 2 * pos + 1, mi + 1, r);
+        st[pos] = st[2 * pos] + st[2 * pos + 1];
+    }
+    void update(int x, int y) { // void update(int x, node y)
+        update(x, y, 1, 0, n - 1);
+    }
+
+    node query(int x, int y, int pos, int l, int r) {
+        if(y < l || r < x) return node();
+        if(x <= l && r <= y) return st[pos];
+        int mi = (l + r) / 2;
+        return query(x, y, 2 * pos, l, mi) + query(x, y, 2 * pos + 1, mi + 1, r);
+    }
+    node query(int x, int y) {
+        return query(x, y, 1, 0, n - 1);
+    }
+};
