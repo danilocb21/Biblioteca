@@ -16,6 +16,7 @@ void selectionSort(int *ar, int n){
 
     for(i = 0; i < n; i++){
         menor = ar[i];
+        indexMenor = i;
         for(j = i + 1; j < n; j++){
             if(ar[j] < menor){
                 indexMenor = j;
