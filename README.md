@@ -17,6 +17,11 @@ Os códigos estão implementados em c++.
 
 - [BIT (Fenwick Tree)](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Estruturas/bit.cpp)
 
+### Grafos
+
+- [Dijkstra](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Grafos/dijkstra)
+- [Floyd-Warshall](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Grafos/floydWarshall.cpp)
+
 ### Matemática
 
 - [Algoritmo de Euclides](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Matematica/gcd.cpp)
