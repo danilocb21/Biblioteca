@@ -9,12 +9,15 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long llu;
 
-int main(){ _
+const int INF = 0x3f3f3f3f;
+const ll LINF = 0x3f3f3f3f3f3f3f3fll;
+
+int main() { _
     int tt;
     cin >> tt;
     while(tt--) {
 
-    }
+    } 
     
     return 0;
-}
+};
