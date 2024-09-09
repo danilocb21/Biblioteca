@@ -22,7 +22,7 @@ vector<Edge> kruskal(vector<Edge> *edges, int n) {
     sort(edges.begin(), edges.end());
 
     for (Edge e : edges) {
-        if (tree_id[e.u] != tree_id[e.u]) {
+        if (tree_id[e.u] != tree_id[e.v]) {
             cost += e.weight;
             msp.push_back(e);
 
