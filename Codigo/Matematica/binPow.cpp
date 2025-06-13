@@ -12,3 +12,6 @@ ll binpow(ll a, ll b, ll m){
     }
     return result;
 }
+
+// a^b^c -> Pequeno teorema de Fermat | M = 1e9 + 7
+// binpow(a, binpow(b, c, m-1), m)
