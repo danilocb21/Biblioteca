@@ -19,7 +19,7 @@ vector<int> manacher(string& s) {
     for(int i = 1; i <= n; i++) {
         p[i] = min(r - i, p[l + r - i]);
 
-        while(s[i - p[i]] == s[i + p[i]])
+        while(t[i - p[i]] == t[i + p[i]])
             p[i]++;
 
         if (i + p[i] > r) {
