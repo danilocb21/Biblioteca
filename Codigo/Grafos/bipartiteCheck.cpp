@@ -1,4 +1,5 @@
 // Bipartite Graph Check
+// 
 
 bool isBipartite(int n, vector<vector<int>>& adj) {
     vector<int> side(n, -1);

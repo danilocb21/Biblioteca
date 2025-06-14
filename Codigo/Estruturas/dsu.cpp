@@ -1,5 +1,5 @@
 // Disjoint Set Union
-
+//
 // Estrutura que permite combinar conjuntos e 
 // dizer de qual conjunto cada elemento faz parte
 

@@ -1,5 +1,5 @@
 // Manacher's Algorithm
-
+//
 // Encontra todos os sub-palindromos de uma string em tempo linear
 
 // O(n)
