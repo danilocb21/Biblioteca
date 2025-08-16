@@ -19,7 +19,7 @@ Os códigos estão implementados em c++.
 
 ### Grafos
 
-- [Dijkstra](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Grafos/dijkstra)
+- [Dijkstra](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Grafos/dijkstra.cpp)
 - [Floyd-Warshall](https://github.com/GabrielCFormiga/Biblioteca/blob/main/Codigo/Grafos/floydWarshall.cpp)
 
 ### Matemática
